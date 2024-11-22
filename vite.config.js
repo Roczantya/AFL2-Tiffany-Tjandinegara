@@ -5,7 +5,7 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
   plugins: [
     laravel({
-      input: [path.resolve(__dirname, 'resources/css/app.css'), path.resolve(__dirname, 'resources/js/app.js')],
+      input: ['resources/css/app.css', 'resources/js/app.js'], // Pastikan path sesuai
       refresh: true,
     }),
   ],
